@@ -2,21 +2,8 @@ const path = require("path");
 const http = require("http");
 const express = require("express");
 const socketio = require("socket.io");
-const mysql = require("mysql");
 const formatMessage = require("./utils/messages");
-const createAdapter = require("@socket.io/redis-adapter").createAdapter;
-const redis = require("redis");
-const con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "cancan"
-});
-con.connect(function(err) {
-  if (err) throw err;
-  console.log("Connected!");
-});
 require("dotenv").config();
-const { createClient } = redis;
 const {
   userJoin,
   getCurrentUser,
@@ -24,15 +11,14 @@ const {
   getRoomUsers,
 } = require("./utils/users");
 
-
 const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
 // Set static folder
-app.use(express.static(path.join(__dirname,"")));
+app.use(express.static(path.join(__dirname, )));
 
-const botName = "Hanoi LobbyBot";
+const botName = "Hanoi Lobby Bot";
 
 // Run when client connects
 io.on("connection", (socket) => {
@@ -43,15 +29,15 @@ io.on("connection", (socket) => {
     socket.join(user.room);
 
     // Welcome current user
-    socket.emit("message", formatMessage(botName, `Welcome to the Lobby: ${room}`));
+    socket.emit("message", formatMessage(botName, "Welcome to Lobby"));
 
     // Broadcast when a user connects
     socket.broadcast
-      .to(user.room)
-      .emit(
-        "message",
-        formatMessage(botName, `${user.username} has joined the lobby`)
-      );
+        .to(user.room)
+        .emit(
+            "message",
+            formatMessage(botName, `${user.username} has joined the lobby`)
+        );
 
     // Send users and room info
     io.to(user.room).emit("roomUsers", {
@@ -73,8 +59,8 @@ io.on("connection", (socket) => {
 
     if (user) {
       io.to(user.room).emit(
-        "message",
-        formatMessage(botName, `${user.username} has left the lobby`)
+          "message",
+          formatMessage(botName, `${user.username} has left the lobby`)
       );
 
       // Send users and room info
@@ -86,6 +72,6 @@ io.on("connection", (socket) => {
   });
 });
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 3000;
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
