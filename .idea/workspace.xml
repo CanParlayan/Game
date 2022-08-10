@@ -33,8 +33,14 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\halilcan.parlayan\WebstormProjects\untitled9" />
+      <recent name="C:\Users\halilcan.parlayan\WebstormProjects\untitled9\public" />
+    </key>
+  </component>
   <component name="RunManager" selected="Node.js.server.js">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/untitled9/public/index.html" useBuiltInWebServerPort="true">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/untitled9/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/server.js" working-dir="$PROJECT_DIR$">
@@ -57,6 +63,7 @@
       <updated>1660122749771</updated>
       <workItem from="1660122751022" duration="5357000" />
       <workItem from="1660133580033" duration="316000" />
+      <workItem from="1660134359446" duration="878000" />
     </task>
     <servers />
   </component>
