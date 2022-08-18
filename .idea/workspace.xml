@@ -10,7 +10,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -22,21 +24,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;nodejs.mocha.mocha_node_package_dir&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\halilcan.parlayan\\WebstormProjects\\untitled14\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "list.type.of.created.stylesheet": "CSS",
+    "nodejs.mocha.mocha_node_package_dir": "",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\halilcan.parlayan\\WebstormProjects\\untitled14\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\halilcan.parlayan\WebstormProjects\untitled14\public" />
       <recent name="C:\Users\halilcan.parlayan\WebstormProjects\untitled14" />
     </key>
   </component>
@@ -44,7 +48,7 @@
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/untitled14/public/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="client.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/public/js/client.js" working-dir="$PROJECT_DIR$/public/js">
+    <configuration name="multiplayer.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/untitled14/public/multiplayer.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="gameSet.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app/gameSet.js" working-dir="$PROJECT_DIR$/app">
@@ -59,10 +63,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.server.js" />
+        <item itemvalue="JavaScript Debug.multiplayer.html" />
         <item itemvalue="Node.js.index.js" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="Node.js.gameSet.js" />
-        <item itemvalue="Node.js.client.js" />
       </list>
     </recent_temporary>
   </component>
@@ -76,11 +80,23 @@
       <updated>1660568950657</updated>
       <workItem from="1660568952110" duration="680000" />
       <workItem from="1660570742899" duration="15018000" />
-      <workItem from="1660805013965" duration="2645000" />
+      <workItem from="1660805013965" duration="7424000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/public/js/client.js</url>
+          <line>28</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

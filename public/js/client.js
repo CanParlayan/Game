@@ -1,6 +1,7 @@
 var socket = io();
 
 $(function() {
+  var url = 'multiplayer.html';
   /**
    * Successfully connected to server event
    */
@@ -8,7 +9,6 @@ $(function() {
     console.log('Connected to server.');
     $('#disconnected').hide();
     $('#waiting-room').show();
-    $('#game').show();
   });
 
   /**
@@ -26,10 +26,10 @@ $(function() {
    */
   socket.on('join', function(gameId) {
     $('#waiting-room').hide();
+    window.location.href = 'multiplayer.html';
     Game.initGame();
     $('#messages').empty();
     $('#disconnected').hide();
-    $('#game').show();
     $('#game-number').html(gameId);
   });
 
