@@ -42,4 +42,4 @@ var Game = (function() {
     'setTurn': setTurn,
     'setGameOver': setGameOver
   };
-}
+})

@@ -1,6 +1,5 @@
 var Player = require('./player.js');
 var GameStatus = require('./gameStatus.js');
-let game = require('./index.js');
 /**
  * Game constructor
  * @param {type} id Game ID

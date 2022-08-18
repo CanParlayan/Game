@@ -1,5 +1,3 @@
-
-
 const DEFAULT_GAME = new class Game {
   constructor() {
     this.nodes = {
