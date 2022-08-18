@@ -1,0 +1,16 @@
+{
+  "name": "NodeBattleship",
+  "version": "0.0.1",
+  "description": "Multiplayer Battleship with NodeJS and Socket.io",
+  "author": {
+    "name": "Christian Nilsson"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "html-entities": "1.1.2",
+    "socket.io": "^4.5.1"
+  },
+  "devDependencies": {
+    "jsdom": "^20.0.0"
+  }
+}
